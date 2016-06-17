@@ -1,0 +1,579 @@
+@font-face {
+  font-family: 'Segoe Print Regular';
+  src: url("../fonts/SegoePrintRegular.eot");
+  src: url("../fonts/SegoePrintRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoePrintRegular.woff") format("woff"), url("../fonts/SegoePrintRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Segoe Print Bold';
+  src: url("../fonts/SegoePrintBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'AdventPro SemiBold';
+  src: url("../fonts/advent-pro.semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Ubuntu Regular';
+  src: url("../fonts/Ubuntu-R.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Ubuntu Bold';
+  src: url("../fonts/Ubuntu-B.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Ubuntu Italic';
+  src: url("../fonts/Ubuntu-MI.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Unkempt Bold';
+  src: url("../fonts/Unkempt-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Euphemia';
+  src: url("../fonts/Euphemia.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #ebebeb; }
+
+.wrapper {
+  width: 960px;
+  height: 1325px;
+  margin: 0 auto;
+  position: relative; }
+
+.container {
+  width: 100%;
+  height: 1273px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px #c0c0c0; }
+
+.angle-top {
+  width: 261px;
+  height: 81px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/angle-top.png); }
+
+.angle-bottom {
+  width: 268px;
+  height: 89px;
+  position: absolute;
+  top: 1188px;
+  left: 697px;
+  background-image: url(../img/angle-bottom.png); }
+
+.header {
+  width: 100%;
+  height: 159px; }
+
+.logo {
+  width: 386px;
+  float: right;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px; }
+  .logo__img {
+    width: 55px;
+    height: 50px;
+    margin-top: 20px;
+    float: left;
+    background-image: url(../img/logo.png); }
+  .logo__title {
+    width: 300px;
+    height: 46px;
+    margin-top: 37px;
+    margin-right: 30px;
+    float: right;
+    background-image: url(../img/logo-title.png); }
+  .logo__describe {
+    clear: both;
+    margin-left: 129px;
+    font-family: "Segoe Print Regular", sans-serif;
+    font-size: 18px;
+    color: #666;
+    line-height: 20px; }
+
+.nav {
+  clear: both; }
+
+.menu {
+  clear: both;
+  width: 865px;
+  float: left;
+  font-family: "AdventPro SemiBold", sans-serif;
+  font-size: 28px;
+  color: #666;
+  line-height: 40px; }
+  .menu__item {
+    display: inline-block;
+    height: 46px;
+    padding-left: 31px;
+    list-style: none;
+    box-sizing: border-box; }
+    .menu__item--1 {
+      color: #666;
+      padding-right: 27px; }
+    .menu__item--2 {
+      color: #8cc445;
+      padding-left: 20px;
+      padding-right: 27px; }
+    .menu__item--3 {
+      color: #999;
+      padding-left: 31px;
+      padding-right: 38px;
+      border-radius: 22px 22px 0 0;
+      color: #333; }
+    .menu__item--4 {
+      color: #0b4c98;
+      padding: 0 19px; }
+  .menu__item:hover {
+    border-radius: 22px 22px 0 0;
+    color: #fff;
+    background-color: #ffc118;
+    cursor: pointer; }
+  .menu__submenu {
+    position: relative; }
+    .menu__submenu__list {
+      display: none;
+      position: absolute;
+      width: 76%;
+      height: 86px;
+      top: 46px;
+      left: 0;
+      padding-top: 11px;
+      background-color: #ffd86f;
+      border-top: 4px solid #ffc118;
+      border-left: 21px solid #ffc118;
+      border-right: 19px solid #ffc118;
+      border-bottom: 15px solid #ffc118;
+      border-radius: 0 0 20px 20px;
+      z-index: 10; }
+    .menu__submenu__item {
+      padding-left: 8px;
+      font-family: "Ubuntu Regular", sans-serif;
+      font-size: 17px;
+      color: #666;
+      line-height: 24px;
+      list-style: none; }
+    .menu__submenu__item a {
+      display: block;
+      color: #666; }
+    .menu__submenu__item:hover {
+      background-color: #eee; }
+    .menu__submenu:hover .menu__submenu__list {
+      display: block; }
+
+.social {
+  width: 70px;
+  height: 30px;
+  margin-top: 3px;
+  margin-right: 25px;
+  float: right; }
+  .social__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px #c0c0c0; }
+
+.slider {
+  clear: both;
+  position: relative;
+  overflow: hidden; }
+  .slider__list {
+    width: 3000px;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .slider__item {
+    float: left;
+    width: 960px;
+    height: 470px; }
+    .slider__item--1 {
+      background-image: url(../img/slider1-970.png); }
+    .slider__item--2 {
+      background-image: url(../img/slider2-970.png); }
+    .slider__item--3 {
+      background-image: url(../img/slider3-970.png); }
+  .slider__btn {
+    display: block;
+    position: absolute;
+    top: 418px;
+    border-radius: 100%; }
+  .slider__prev {
+    left: 867px; }
+  .slider__next {
+    left: 904px; }
+
+.content {
+  width: 100%;
+  height: 570px;
+  margin-top: 27px; }
+  .content__two-columns {
+    position: relative;
+    overflow: hidden; }
+  .content__news {
+    width: 275px;
+    height: 320px;
+    margin-left: 30px;
+    float: left; }
+    .content__news__title {
+      padding-left: 5px;
+      font-family: "Unkempt Bold", sans-serif;
+      font-size: 25px;
+      color: #ffbf18;
+      line-height: 30px;
+      background-image: url(../img/line.png);
+      background-position: 90px 16px;
+      background-repeat: no-repeat; }
+    .content__news__content {
+      margin-top: 13px; }
+    .content__news__txt {
+      height: 85px;
+      margin-bottom: 18px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #ccc; }
+      .content__news__txt__title {
+        margin-left: 2px;
+        margin-bottom: 3px;
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 16px;
+        color: #666;
+        line-height: 17px; }
+      .content__news__txt__txt {
+        font-family: "Ubuntu Regular", sans-serif;
+        font-size: 12px;
+        color: #666;
+        line-height: 17px; }
+      .content__news__txt__link {
+        font-family: "Ubuntu Bold", sans-serif;
+        font-size: 12px;
+        color: #8a0026;
+        line-height: 18px; }
+  .content__products {
+    width: 612px;
+    height: 307px;
+    margin-top: 13px;
+    margin-right: 14px;
+    float: right; }
+  .content__product {
+    width: 194px;
+    height: 147px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box; }
+    .content__product__img {
+      width: 100%;
+      height: 109px;
+      line-height: 109px;
+      background-repeat: no-repeat;
+      background-position: center; }
+      .content__product__img img {
+        vertical-align: middle; }
+      .content__product__img--1 {
+        background-image: url(../img/product1-970.png); }
+      .content__product__img--2 {
+        background-image: url(../img/product2-970.png); }
+      .content__product__img--3 {
+        background-image: url(../img/product3-970.png); }
+      .content__product__img--4 {
+        background-image: url(../img/product4-970.png); }
+      .content__product__img--5 {
+        background-image: url(../img/product5-970.png); }
+      .content__product__img--6 {
+        background-image: url(../img/product6-970.png); }
+    .content__product__link {
+      display: block;
+      width: 100%;
+      height: 36px;
+      font-family: "Ubuntu Regular", sans-serif;
+      font-size: 18px;
+      color: #333;
+      line-height: 33px;
+      text-align: center;
+      background-color: #99cb5a; }
+  .content__description {
+    clear: both;
+    width: 907px;
+    height: 187px;
+    margin-top: 62px;
+    margin-left: 28px;
+    background-color: #f2f2f2;
+    border: 3px solid #ccc;
+    border-radius: 17px;
+    box-sizing: border-box; }
+    .content__description__left {
+      width: 186px;
+      height: 104px;
+      margin-top: 50px;
+      margin-left: 44px;
+      float: left; }
+      .content__description__left__title {
+        font-family: "Segoe Print Bold", sans-serif;
+        font-size: 22px;
+        color: #8cc445;
+        line-height: 25px;
+        letter-spacing: -0.5px;
+        border-bottom: 3px solid #8cc445; }
+      .content__description__left__logo {
+        width: 70px;
+        height: 62px;
+        margin-top: 14px;
+        margin-left: 47px;
+        background-image: url(../img/description-logo.png); }
+    .content__description__right {
+      width: 71px;
+      height: 155px;
+      margin-top: 12px;
+      margin-right: 31px;
+      float: right;
+      background-image: url(../img/logo-big.png); }
+    .content__description__center {
+      width: 484px;
+      height: 163px;
+      margin-top: 7px;
+      margin-left: 315px;
+      position: relative; }
+      .content__description__center__txt {
+        width: 449px;
+        height: 119px;
+        margin-top: 20px;
+        margin-left: 16px;
+        padding-top: 17px;
+        padding-left: 22px;
+        padding-right: 7px;
+        word-spacing: 2.4px;
+        font-family: "Ubuntu Italic", sans-serif;
+        font-size: 14px;
+        color: #666;
+        line-height: 21px;
+        background-color: #f3edda;
+        border: 1px solid #e3e3e3;
+        border-radius: 10px;
+        box-sizing: border-box; }
+      .content__description__center__company {
+        margin-top: 13px;
+        margin-left: 45px;
+        word-spacing: 2px;
+        font-family: "Ubuntu Regular", sans-serif;
+        font-size: 14px;
+        color: #666;
+        line-height: 21px; }
+      .content__description__center__quotes {
+        position: absolute;
+        top: 0;
+        font-family: "Euphemia", sans-serif;
+        font-size: 96px;
+        color: #999; }
+  .content--left {
+    top: -36px;
+    left: -3px; }
+  .content--right {
+    top: 76px;
+    left: 452px; }
+
+.footer {
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden; }
+  .footer__menu {
+    float: left;
+    width: 300px;
+    margin-top: 2px;
+    margin-left: 20px;
+    font-family: "Ubuntu Regular", sans-serif;
+    font-size: 11px;
+    color: #666;
+    line-height: 13px; }
+    .footer__menu__list {
+      list-style: none; }
+    .footer__menu__item {
+      display: inline-block; }
+    .footer__menu__link {
+      display: block;
+      padding-left: 2px;
+      padding-right: 5px;
+      color: #666;
+      border-right: 1px solid #666; }
+  .footer__copy-right {
+    float: right;
+    width: 175px;
+    margin-right: 8px;
+    font-family: "Ubuntu Regular", sans-serif;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px; }
+
+@media screen and (max-width: 970px) {
+  .wrapper {
+    width: 768px;
+    height: 1360px;
+    margin: 0 auto;
+    position: relative; }
+  .container {
+    height: 1361px; }
+  .angle-bottom {
+    top: 1276px;
+    left: 499px;
+    background-image: url(../img/angle-bottom-768.png); }
+  .logo {
+    width: 305px; }
+    .logo__img {
+      width: 46px;
+      height: 41px;
+      margin-top: 27px;
+      background-image: url(../img/logo-768.png); }
+    .logo__title {
+      width: 248px;
+      height: 38px;
+      margin-top: 42px;
+      margin-right: 10px;
+      background-image: url(../img/logo-title-768.png); }
+    .logo__describe {
+      margin-left: 107px;
+      font-size: 16px;
+      line-height: 15px;
+      word-spacing: -3px; }
+  .menu {
+    width: 640px;
+    margin-top: 8px; }
+    .menu__item--1 {
+      padding-left: 13px;
+      padding-right: 27px; }
+  .social {
+    margin-top: 12px;
+    margin-right: 7px; }
+  .slider {
+    width: 764px; }
+    .slider__item {
+      width: 764px;
+      height: 374px; }
+      .slider__item--1 {
+        background-image: url(../img/slider1-768.png); }
+      .slider__item--2 {
+        background-image: url(../img/slider2-768.png); }
+      .slider__item--3 {
+        background-image: url(../img/slider3-768.png); }
+    .slider__btn {
+      top: 330px; }
+    .slider__prev {
+      left: 690px; }
+    .slider__next {
+      left: 727px; }
+  .content {
+    margin-top: 8px; }
+    .content__news {
+      width: 758px;
+      height: 142px;
+      margin-left: 10px; }
+      .content__news__title {
+        color: #fff2cf; }
+      .content__news__content {
+        height: 88px;
+        margin-top: 10px;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box; }
+      .content__news__txt {
+        float: left;
+        width: 248px;
+        margin-right: 4px;
+        border: none; }
+        .content__news__txt__txt {
+          font-size: 11px;
+          line-height: 16px; }
+    .content__products {
+      clear: both;
+      float: none;
+      width: 758px;
+      height: 380px;
+      margin-left: 9px; }
+    .content__product {
+      width: 239px;
+      height: 182px;
+      margin-right: 13px;
+      margin-bottom: 15px; }
+      .content__product__img {
+        height: 135px;
+        background-repeat: no-repeat;
+        background-position: center; }
+        .content__product__img--1 {
+          background-image: url(../img/product1-768.png); }
+        .content__product__img--2 {
+          background-image: url(../img/product2-768.png); }
+        .content__product__img--3 {
+          background-image: url(../img/product3-768.png); }
+        .content__product__img--4 {
+          background-image: url(../img/product4-768.png); }
+        .content__product__img--5 {
+          background-image: url(../img/product5-768.png); }
+        .content__product__img--6 {
+          background-image: url(../img/product6-768.png); }
+      .content__product__link {
+        height: 46px;
+        line-height: 52px; }
+    .content__description {
+      width: 749px;
+      height: 186px;
+      margin-top: 16px;
+      margin-left: 8px; }
+      .content__description__left {
+        width: 163px;
+        margin-top: 41px;
+        margin-left: 14px; }
+        .content__description__left__title {
+          font-size: 20px;
+          line-height: 25px;
+          letter-spacing: -0.95px; }
+        .content__description__left__logo {
+          margin-left: 51px; }
+      .content__description__right {
+        margin-right: 17px; }
+      .content__description__center {
+        margin-left: 201px; }
+        .content__description__center__txt {
+          height: 121px;
+          margin-top: 18px;
+          padding-right: 0;
+          word-spacing: 0; }
+  .footer {
+    margin-top: -45px; }
+    .footer__menu {
+      margin-top: 21px;
+      margin-left: 8px; }
+    .footer__copy-right {
+      margin-right: 25px; } }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test task for IT Delight</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+  <script src="js/tmpl.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/html" id="news-tmpl">
+  <%for(var i = 0; i < Db.news.length; i++) {%>
+    <div class="content__news__txt">
+      <div class="content__news__txt__title"><%=Db.news[i].title%></div>
+      <div class="content__news__txt__txt"><%=Db.news[i].txt%></div>
+      <a href="#" class="content__news__txt__link"><%=Db.news[i].link%></a>
+    </div>
+  <%}%>
+  </script>
+  <script type="text/html" id="products-tmpl">
+  <%for(var i = 0; i < Db.products.length; i++) {%>
+    <div class="content__product">
+      <div class="content__product__img content__product__img--<%=i + 1%>">
+      </div>
+      <a class="content__product__link" href="#"><%=Db.products[i].link%></a>
+    </div>
+  <%}%>
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="angle-top"></div>
+      <div class="angle-bottom"></div>
+      <div class="header">
+        <div class="logo">
+          <div class="logo__img"></div>
+          <div class="logo__title"></div>
+          <div class="logo__describe">Wir lieben Kinder</div>
+        </div>
+        <div class="nav">
+          <ul class="menu">
+            <li class="menu__item menu__item--1">Home</li>
+            <li class="menu__item menu__item--2">Produkte</li>
+            <li class="menu__item menu__item--3 menu__submenu">Über uns
+              <ul class="menu__submenu__list">
+                <li class="menu__submenu__item"><a href="#">Qualität</a></li>
+                <li class="menu__submenu__item"><a href="#">Service</a></li>
+                <li class="menu__submenu__item"><a href="#">Kontakt</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--4">Online-Shop</li>
+          </ul>
+          <div class="social">
+            <a href="#" class="social__link social__facebook"><img src="img/fb-icon.png" alt=""></a>
+            <a href="#" class="social__link social__twitter"><img src="img/twitter-icon.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <ul class="slider__list">
+          <li class="slider__item slider__item--1"></li>
+          <li class="slider__item slider__item--2"></li>
+          <li class="slider__item slider__item--3"></li>
+        </ul>
+        <a class="slider__btn slider__prev"href="#"><img src="img/arrow-left.png" alt=""></a>
+        <a class="slider__btn slider__next"href="#"><img src="img/arrow-right.png" alt=""></a>
+      </div>
+      <div class="content">
+        <div class="content__two-columns">
+          <div class="content__news">
+            <div class="content__news__title">
+              Aktuell
+            </div>
+            <div class="content__news__content">
+            </div>
+          </div>
+          <div class="content__products">
+          </div>
+        </div>
+        <div class="content__description">
+          <div class="content__description__left">
+            <div class="content__description__left__title">
+              Wir lieben Kinder
+            </div>
+            <div class="content__description__left__logo">
+            </div>
+          </div>
+          <div class="content__description__right"></div>
+          <div class="content__description__center">
+            <div class="content__description__center__txt">Seit der Unternehmensgründung im Jahre 2010 stehen bei uns sichere und hochwertige Produkte zu fairen Preisen an erster Stelle. Als Eltern kennen wir die Bedürfnisse von Eltern und achten bei der Auswahl unserer Produkte auf höchste Qualität.</div>
+            <div class="content__description__center__company">Ihr Holger Horn - Geschäftsführer HEBA-Germany GmbH</div>
+            <div class="content__description__center__quotes content--left">”</div>
+            <div class="content__description__center__quotes content--right">“</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__menu">
+        <ul class="footer__menu__list">
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Sitemap</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Kontakt</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Impressum</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">AGB</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer__copy-right">© 2013 - HEBA-Germany GmbH Realisiert von Junge Werbung</div>
+    </div>
+  </div>
+</body>
+</html>
